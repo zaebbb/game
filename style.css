@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: .5s;
+}
+a{
+    color: #fff;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: url('./img/bg.jpg') no-repeat;
+    background-size: cover;
+}
+.start{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start.hidd{
+    visibility: hidden;
+    opacity: 0;
+}
+.start .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.header_game{
+    font-size: 50px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.start p{
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.start p a{
+    text-decoration: underline;
+}
+.start input{
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+.start .menu button{
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+.start .menu button:hover{
+    background: #ccc;
+}
+.game{
+    /* opacity: 0;
+    visibility: hidden; */
+    height: 100vh;
+}
+.game.hidd{
+    opacity: 0;
+    visibility: hidden;
+}
+.game .foot img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    z-index: 100;
+    object-fit: cover;
+}
+.game .basket img{
+    width: 100px;
+    filter: invert(1);
+    position: absolute;
+    bottom: 60px;
+    z-index: 1000;
+}
+.bloc-line{
+    position: absolute;
+    left: 1100px;
+    border-left: 1px dashed #fff;
+    width: 1px;
+    height: 100px;
+    bottom: 100px;
+}
+.rules{
+    max-width: 600px !important;
+    width: 100%;
+}
+.fruits{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    top: 0;
+    width: 1100px;
+    z-index: 1000;
+}
+.fruits img{
+    position: absolute;
+    width: 50px;
+    transform: translateY(-200px);
+    transition: 10s linear;
+}
+.fruits img.hidd{
+    opacity: 0;
+    visibility: hidden;
+}
+.timer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 10px;
+    z-index: 10000;
+    font-size: 24px;
+    color: #fff;
+    border-bottom-right-radius: 15px;
+}
+.countFruit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 10px;
+    z-index: 10000;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    font-size: 24px;
+}
+.endGame{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.endGame .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.endGame.hidd{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+.endGame .menu h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.endGame .menu h2{
+    margin-top: 20px;
+}
+.endGame .menu table{
+    width: 400px;
+    color: #fff;
+}
+.endGame .menu table tr td{
+    border: 1px solid #fff;
+    padding: 5px 15px;
+}
+.endGame .menu button{
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 10px;border: 1px solid transparent;
+}

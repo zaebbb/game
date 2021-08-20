@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHame</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="start">
+        <div class="menu">
+            <h1 class="header_game">
+            Фруктовый переворот
+            </h1>
+            <p>Для начала игры пожалуйста введите свое имя. <br>Также можете ознакомиться с <a href="./rules.html">правилами игры</a></p>
+            <input class="input_start_name" type="text" placeholder="Имя">
+            <button class="btn_start_game"disabled>Начать игру</button>
+        </div>
+    </div>
+    <div class="game hidd">
+        <div class="basket">
+            <img src="./img/bascet.png">
+        </div>
+        <div class="foot">
+            <img src="./img/footer_playgame.png">
+        </div>
+        <div class="bloc-line"></div>
+        <div class="fruits">
+            <img src="./img/fruct1.png">
+        </div>
+        <div class="timer">
+            <span class="minute"></span>:<span class="second"></span>
+            <button class="pause_game">Пауза</button>
+        </div>
+        <div class="countFruit">
+            Счет <span>0</span>
+        </div>
+    </div>
+    <div class="endGame hidd">
+        <div class="menu">
+            <h1>Игра окончена</h1>
+            <h2>Ваш результат <span class="countEnd"></span></h2>
+            <h3>Таблица с лучшими результатами</h3>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>Игрок</td>
+                    <td>Результат</td>
+                </tr>
+                <tr>
+                    <td>Игрок</td>
+                    <td>Результат</td>
+                </tr>
+                <tr>
+                    <td>Игрок</td>
+                    <td>Результат</td>
+                </tr>
+                <tr>
+                    <td>Игрок</td>
+                    <td>Результат</td>
+                </tr>
+            </table>
+            <button class="newGame">Попробовать еще раз</button>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
