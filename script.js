@@ -109,7 +109,7 @@ function gamePlay(){
                 }
         }
     document.querySelector('.countEnd').textContent = countFruit;
-        if(timer == 290){
+        if(timer == 0){
             game.classList.add('hidd')
             setTimeout(() => {
                 game.style.display = "none";
