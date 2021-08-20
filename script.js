@@ -124,7 +124,7 @@ function gamePlay(){
             return;
         }
     }, 200)
-    if(timer == 290){
+    if(timer == 0){
         game.classList.add('hidd')
         setTimeout(() => {
             game.style.display = "none";
